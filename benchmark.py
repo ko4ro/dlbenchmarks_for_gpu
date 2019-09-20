@@ -8,7 +8,8 @@ import numpy as np
 frameworks = [
     'pytorch',
     'tensorflow',
-    'caffe2'
+    'caffe2',
+    'mxnet'
 ]
 
 models = [

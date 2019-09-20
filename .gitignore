@@ -1,2 +1,8 @@
 __pycache__
 *.pyc
+core
+.DS_Store
+create_table.py
+benchmark.py
+frameworks
+
