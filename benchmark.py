@@ -2,8 +2,9 @@ import argparse
 from collections import OrderedDict
 from importlib import import_module
 import pickle
-
 import numpy as np
+
+import os
 
 frameworks = [
     'pytorch',
@@ -67,6 +68,8 @@ if __name__ == '__main__':
     if args.framework:
         print('running benchmark for framework', args.framework)
         results = Benchmark().benchmark_framework(args.framework)
+        if not os.path.exists('./pkl'):
+            os.mkdir('./pkl')
         pickle.dump(results, open('{}_results.pkl'.format(args.framework), 'wb'))
     else:
         print('running benchmark for frameworks', frameworks)
