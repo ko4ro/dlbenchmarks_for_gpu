@@ -1,3 +1,0 @@
-,vgg16 eval,vgg16 train,resnet152 eval,resnet152 train,densenet161 eval,densenet161 train
-fp32,55.69,176.71,68.64,197.22,0.0,0.0
-fp16,40.29,148.16,51.77,157.87,0.0,0.0
