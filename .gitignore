@@ -3,6 +3,7 @@ __pycache__
 core
 .DS_Store
 create_table.py
-benchmark.py
-frameworks
+compared_graph.py
+convert_to_csv.py
+benchmark_results_gpu
 
