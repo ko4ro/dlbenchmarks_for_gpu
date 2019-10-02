@@ -1,6 +1,7 @@
 __pycache__
 *.pyc
 core
+pkl
 .DS_Store
 create_table.py
 compared_graph.py
