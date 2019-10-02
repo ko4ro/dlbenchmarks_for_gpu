@@ -9,8 +9,7 @@ import os
 frameworks = [
     'pytorch',
     'tensorflow',
-    'caffe2',
-    'mxnet'
+    'caffe2' 
 ]
 
 models = [
@@ -70,11 +69,11 @@ if __name__ == '__main__':
         results = Benchmark().benchmark_framework(args.framework)
         if not os.path.exists('./pkl'):
             os.mkdir('./pkl')
-        pickle.dump(results, open('{}_results.pkl'.format(args.framework), 'wb'))
+        pickle.dump(results, open('./pkl/{}.pkl'.format(args.framework), 'wb'))
     else:
         print('running benchmark for frameworks', frameworks)
         results = Benchmark().benchmark_all()
-        pickle.dump(results, open('all_results.pkl', 'wb'))
+        pickle.dump(results, open('./pkl/all_results.pkl', 'wb'))
 
 
 
