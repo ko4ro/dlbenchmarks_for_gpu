@@ -4,9 +4,8 @@ core
 pkl
 csv
 graph
+benchmark_results_gpu
 .DS_Store
 create_table.py
 compared_graph.py
 convert_to_csv.py
-benchmark_results_gpu
-
