@@ -9,7 +9,7 @@ import os
 frameworks = [
     'pytorch',
     'tensorflow',
-    'caffe2' 
+    'caffe2'
 ]
 
 models = [
@@ -22,6 +22,7 @@ precisions = [
     'fp32',
     'fp16'
 ]
+
 
 class Benchmark():
 
@@ -59,6 +60,7 @@ class Benchmark():
 
         return results
 
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-f', dest='framework', required=False)
@@ -75,6 +77,4 @@ if __name__ == '__main__':
         results = Benchmark().benchmark_all()
         pickle.dump(results, open('./pkl/all_results.pkl', 'wb'))
 
-
-
-
+pass
